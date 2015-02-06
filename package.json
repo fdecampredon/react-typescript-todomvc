@@ -1,0 +1,25 @@
+{
+  "name": "react-typescript-todomvc",
+  "version": "0.1.0",
+  "description": "TodoMVC written with React and jsx-typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "jsx-tsc --module commonjs --target es5 --noImplicitAny --outDir ./temp src/declarations/react.d.ts  src/main/app.ts && browserify ./temp/app.js -o bundle.js"
+  },
+  "keywords": [
+    "React",
+    "typescript",
+    "jsx"
+  ],
+  "author": "Francois de Campredon <francois.de.campredon@gmail.com>",
+  "license": "BSD",
+  "dependencies": {
+    "director": "^1.2.8",
+    "react": "^0.13.0-beta.1"
+  },
+  "devDependencies": {
+    "jsx-typescript": "^1.5.0-alpha.1",
+    "browserify": "^8.1.3"
+  }
+}
