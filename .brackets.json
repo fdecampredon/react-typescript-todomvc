@@ -1,0 +1,9 @@
+{
+    "typescript": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "sources": ["src/declarations/*.d.ts", "src/main/**.ts"],
+        "typescriptPath": "/Users/kapit/Documents/workspaces/typescript/TypeScript/"
+    }
+}
