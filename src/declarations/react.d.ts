@@ -6,7 +6,6 @@
 declare module 'react' {
     interface ComponentClass<P> { 
         new(props: P): Component<any, any>; 
-        prototype: { props: P };
     }
     //
     // Component
@@ -505,4 +504,3 @@ declare module 'react' {
     function initializeTouchEvents(shouldUseTouch: boolean): void;
 
 }
-
